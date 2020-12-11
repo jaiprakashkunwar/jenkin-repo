@@ -13,8 +13,8 @@ pipeline {
             steps {
                // bat 'set'
                   echo'Junit passed successfully $jai_username '
-                    echo'JENKIN USER NAME jai_username_USR'
-                    echo'JENKIN USER PASS jai_username_PSW'
+                    echo'JENKIN USER NAME $jai_username_USR'
+                    echo'JENKIN USER PASS $jai_username_PSW'
             }
         }
         
