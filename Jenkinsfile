@@ -6,13 +6,13 @@ pipeline {
         
            environment{
       
-               jai_token=credentials('JENKINS_USERNAME');
+               jai_username=credentials('JENKINS_USERNAME');
       
            }
        
             steps {
                // bat 'set'
-                  echo'Junit passed successfully $jai_token '
+                  echo'Junit passed successfully $jai_username '
             }
         }
         
