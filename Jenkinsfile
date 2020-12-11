@@ -3,8 +3,16 @@ pipeline {
     stages {
     
         stage('Build') {
+        
+           environment{
+      
+               jai_token=credentials("jaiprakashkunwar");
+      
+           }
+       
             steps {
-                bat 'set'
+               // bat 'set'
+                 echo"Junit passed successfully $jai_token"
             }
         }
         
