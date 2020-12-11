@@ -6,13 +6,13 @@ pipeline {
         
            environment{
       
-               jai_token=credentials("jaiprakashkunwar");
+               jai_token=credentials('jaiprakashkunwar');
       
            }
        
             steps {
                // bat 'set'
-                 echo"Junit passed successfully $jai_token"
+                 sh " echo'Junit passed successfully $jai_token '"
             }
         }
         
