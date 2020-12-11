@@ -6,7 +6,7 @@ pipeline {
         
            environment{
       
-               jai_token=credentials('jaiprakashkunwar');
+               jai_token=credentials('JENKINS_USERNAME');
       
            }
        
