@@ -12,7 +12,7 @@ pipeline {
        
             steps {
                // bat 'set'
-                 sh " echo'Junit passed successfully $jai_token '"
+                  echo'Junit passed successfully $jai_token '
             }
         }
         
