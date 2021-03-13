@@ -8,10 +8,11 @@ pipeline {
 
     stages {
     
-     when {
-        branch 'feature/*'
-    }       
+        
         stage('Build') {
+            when {
+                    environment name: 'DOTNET_BUILD', value: 'true'
+            }  
         
            environment{
       
