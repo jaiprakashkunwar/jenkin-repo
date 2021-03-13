@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOTNET_BUILD = 'true'
+        DOTNET_BUILD = 'false'
         DB_BUILD    = 'false'
     }
 
