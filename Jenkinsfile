@@ -8,12 +8,7 @@ pipeline {
 
     stages {
     
-         when {
-                expression {
-                    return env.BRANCH_NAME = 'master';
-                }
-        }
-        
+            
         stage('Build') {
         
            environment{
