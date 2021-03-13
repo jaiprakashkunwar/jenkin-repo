@@ -8,7 +8,9 @@ pipeline {
 
     stages {
     
-            
+     when {
+        branch 'feature/*'
+    }       
         stage('Build') {
         
            environment{
