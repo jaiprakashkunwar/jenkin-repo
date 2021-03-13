@@ -1,7 +1,17 @@
 pipeline {
     agent any
+
+    environment {
+        DOTNET_BUILD = 'true'
+        DB_BUILD    = 'false'
+    }
+
     stages {
     
+        when { 
+            environment name: 'DOTNET_BUILD', value: 'true' 
+        }
+        
         stage('Build') {
         
            environment{
@@ -12,6 +22,7 @@ pipeline {
        
             steps {
                // bat 'set'
+               echo"DOTNET BUILD IS TRUE"
                   echo'Junit passed successfully $jai_username '
                     echo'JENKIN USER NAME $jai_username_USR'
                     echo'JENKIN USER PASS $jai_username_PSW'
