@@ -8,8 +8,10 @@ pipeline {
 
     stages {
     
-        when { 
-            environment name: 'DOTNET_BUILD', value: 'true' 
+         when {
+                expression {
+                    return env.BRANCH_NAME = 'master';
+                }
         }
         
         stage('Build') {
